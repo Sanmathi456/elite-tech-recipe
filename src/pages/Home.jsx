@@ -13,18 +13,17 @@ const Home = () => {
 
   if (status === "loading") return <h2>Loading...</h2>;
   if (status === "failed") return <h2>Error loading recipes</h2>;
-
   const filteredRecipes = recipes.filter((recipe) =>
     recipe.title.toLowerCase().includes(search.toLowerCase())
   );
+
 
   return (
     <div>
       <div className="section1">
         <div className="h-left">
           <p>
-            Welcome to <span id="highlight">FlavorHeaven</span> – Your Ultimate
-            Cooking Companion!
+            Welcome to <span id="highlight">FlavorHeaven!</span>
           </p>
           <p>
             Discover mouth-watering recipes from around the world and save your
@@ -64,7 +63,7 @@ const Home = () => {
                     alert(`${recipe.title} has been added to favorites!`);
                   }}
                 >
-                  💚
+                  ❤️
                 </span>
               </div>
               <p>{recipe.title}</p>

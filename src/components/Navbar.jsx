@@ -14,9 +14,10 @@ const Navbar = () => {
 
       <div className={`nav-links ${menuOpen ? "active" : ""}`}>
         <ul>
-          <li><Link to="/" onClick={() => setMenuOpen(false)}>Recipes</Link></li>
+          <li><Link to="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
+          {/* <li><Link to="/recipeSlice" onClick={() => setMenuOpen(false)}>Recipes</Link></li> */}
           <li><Link to="/favorites" onClick={() => setMenuOpen(false)}>Favorites</Link></li>
-          <li><Link to="#footer" >Contact</Link></li>
+          <li><Link to="/components/Footer" >Contact</Link></li>
           <li><button className="signup-btn">Sign Up</button></li>
         </ul>
       </div>

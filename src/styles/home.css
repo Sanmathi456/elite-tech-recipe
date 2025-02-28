@@ -12,7 +12,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 50px 90px;
-    background: #e13a3a;
+    background: #fff;
     gap: 20px;
     height: 100vh;
   }
@@ -26,7 +26,7 @@ body {
   }
 
   .h-left p{
-    font-size: 32px;
+    font-size: 30px;
     padding-bottom: 13px;
     text-align: left;
     line-height: 1.3;
