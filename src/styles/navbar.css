@@ -1,0 +1,93 @@
+/* Navbar container */
+
+:root{
+    --primary: #08a718;
+    --secondary: #1f1f1f;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+    background: var(--secondary);
+    color: white;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  /* Logo */
+  .logo h1 {
+    font-size: 1.5rem;
+  }
+
+  .navbar .logo span{
+    color: var(--primary);
+  }
+  
+  
+  /* Navigation links */
+
+
+  .nav-links ul {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 400;
+  }
+  
+  .signup-btn {
+    background: #08a718;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Montserrat", serif;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  /* Mobile styles */
+  .menu-icon {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .search-bar {
+      display: none;
+    }
+  
+    .nav-links {
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background: #444;
+      width: 100%;
+      text-align: center;
+      display: none;
+    }
+  
+    .nav-links.active {
+      display: block;
+    }
+  
+    .nav-links ul {
+      flex-direction: column;
+      padding: 20px 0;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  }
+  

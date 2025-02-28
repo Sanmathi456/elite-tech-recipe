@@ -1,0 +1,124 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--secondary);
+    color: white;
+    padding: 40px 70px;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  
+  .footer-left, .footer-center, .footer-right {
+    flex: 1;
+    min-width: 250px;
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .footer-left{
+    display: flex;
+    justify-content: left;
+    align-content: center;
+    flex-direction: column;
+  }
+
+  .footer-left p{
+    text-align: left;
+    padding-left: 43px;
+    padding-top: 8px;
+  }
+
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .logo-icon {
+    font-size: 2rem;
+    color: var(--primary);
+  }
+  
+  /* Quick Links */
+  .footer-center ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-center ul li {
+    margin: 8px 0;
+  }
+  
+  .footer-center ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .footer-center ul li a:hover {
+    color: var(--primary);
+  }
+  
+  /* Subscribe Section */
+  .footer-right h3{
+    padding-bottom: 10px;
+  }
+  .subscribe {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+  }
+  
+  .subscribe input {
+    padding: 10px;
+    width: 60%;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .subscribe button {
+    padding: 10px;
+    border: none;
+    background: var(--primary);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  
+  /* Social Icons */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+    font-size: 1.5rem;
+  }
+  
+  .social-icons svg {
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .social-icons svg:hover {
+    color: var(--primary);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .subscribe input {
+      width: 100%;
+    }
+  }
+  
